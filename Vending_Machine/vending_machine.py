@@ -12,7 +12,7 @@ products= {
 def display_products():
     print("\nAvailable Items:")
     for product_id, product_info in products.items():
-        print(f"{product_id}: {product_info['name']} - ${product_info['price']} (Stock: {product_info['stock']})")
+        print(f"{product_id}: {product_info['name']} - £{product_info['price']} (Stock: {product_info['stock']})")
 
 # Function to process vending 
 def vending_products(product_id, money_inserted):
@@ -43,5 +43,3 @@ while True:
         vending_products(choice, money)
     except ValueError:
         print("Invalid input. Please enter a valid amount of money.")
-
-
